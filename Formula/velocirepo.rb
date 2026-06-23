@@ -1,28 +1,28 @@
 class Velocirepo < Formula
-  desc "Fetch and store open-source project metrics"
+  desc "Track your project's pulse across package registries, GitHub, and the web"
   homepage "https://github.com/jeroenjanssens/velocirepo"
-  version "0.3.3"
+  version "0.3.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/jeroenjanssens/velocirepo/releases/download/v#{version}/velocirepo_#{version}_darwin_amd64.tar.gz"
-      sha256 "4387661d505aba32a3d0b431adc0251b26bf632a8ad2d4f7832516e9a0ad428b"
+      sha256 "a36676599507b282bd551c1724c63c07b32be2363c61305e211f8da56f47f2bc"
     end
     if Hardware::CPU.arm?
       url "https://github.com/jeroenjanssens/velocirepo/releases/download/v#{version}/velocirepo_#{version}_darwin_arm64.tar.gz"
-      sha256 "46d73799dbbd4bf6e6e622708c88f04139748b8b0752516581743b0e0aea387b"
+      sha256 "1b6ed8f1720cbfeedf571a476ba362bd0e8453b43f19bba2f04c3cf3333c1157"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/jeroenjanssens/velocirepo/releases/download/v#{version}/velocirepo_#{version}_linux_amd64.tar.gz"
-      sha256 "1f87599012c410ffc997d32ea133c98e3610beeefb3f0320e49e9ef09b1248fa"
+      sha256 "33ada75b78d072d62ebbbd1432a29431cec034a70ad5beb003b5c7490077e030"
     end
     if Hardware::CPU.arm?
       url "https://github.com/jeroenjanssens/velocirepo/releases/download/v#{version}/velocirepo_#{version}_linux_arm64.tar.gz"
-      sha256 "b1bd24a690a6faeeb6d36acd6c49e5b9f2f9e67f000d131fcaa327bf9a09cc90"
+      sha256 "66746cde7ba39fc8b3d951abe732ffed627ee1239b97b98b8ae840bf115e5ec4"
     end
   end
 
